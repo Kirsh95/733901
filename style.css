@@ -84,12 +84,12 @@
       display: block;
     }
 
-    @media screen and (min-width:666px) {
+    /* @media screen and (min-width:666px) {
         body{
             padding: 0 24px;
         }
         
-    }
+    } */
 
     .aima .scooter{
         background: radial-gradient(93.44% 66.78% at 58.61% 47.6%, rgb(163, 212, 255) 0%, rgb(35, 91, 158) 100%);
@@ -102,6 +102,7 @@
     .aima .scooter .scooter_title{
         text-align: center;
         padding: 0 20px;
+        
     }
     .aima .scooter .scooter_block{
         display: grid;
@@ -113,6 +114,13 @@
 
     }
 
+    .aima .scooter #absolute{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        width: 302px;
+    }
 
     @media screen and (min-width:666px) {
         .aima .scooter {
@@ -131,12 +139,13 @@
         .aima .scooter .scooter_block .scooter_text{
             padding-right: 11px;
         }
-
-
         .aima .scooter .scooter_block .scooter_img{
             grid-column-start: 2;
             grid-row-start: 1;
             padding-left: 22px;
+        }
+        .aima .scooter #absolute{
+            width: 400px;
         }
     }
 
@@ -166,6 +175,9 @@
         .aima .scooter .scooter_block .scooter_img{
             padding-left: 0px;
         }
+        .aima .scooter #absolute{
+            width: 485px;
+        }
     }
 
     @media screen and (min-width:1366px) {
@@ -182,7 +194,7 @@
         }
 
         .aima .scooter {
-            padding:40px 100px ;
+            padding:40px 150px ;
             gap: 60px;
         }
         .aima .scooter .scooter_block{
@@ -197,6 +209,9 @@
         }
         .aima .scooter .scooter_block .scooter_img{
             padding-left: 0px;
+        }
+        .aima .scooter #absolute{
+            width: 640px;
         }
     }
 
@@ -358,13 +373,28 @@
         padding: 40px 16px;
         display: grid;
         gap: 16px;
+        position: relative;
     }
+
+    .aima .good_handling #absolute{
+        position: absolute;
+        top: 0;
+        right: -115px;
+        z-index: 1;
+    }
+
     @media screen and (min-width:666px) {
         .aima .good_handling{
             padding: 40px;
             gap: 32px;
         }
+        .aima .good_handling #absolute{
+            top: -50px;
+            right: -140px;
+            width: 510px;
+        }
     }
+
     @media screen and (min-width:1024px) {
         .aima .good_handling{
             padding: 40px 64px;
@@ -373,7 +403,13 @@
         .aima .good_handling .good_handling_img{
            padding: 0 110px;
         }
+        .aima .good_handling #absolute{
+            top: 0;
+            right:0;
+            width: 470px;
+        }
     }
+
     @media screen and (min-width:1366px) {
         .aima .good_handling{
             padding: 50px 80px;
@@ -381,6 +417,11 @@
         }
         .aima .good_handling .good_handling_img{
            padding: 0 289px;
+        }
+        .aima .good_handling #absolute{
+            top: 0;
+            right:0;
+            width: 560px;
         }
     }
     
@@ -398,10 +439,12 @@
     .aima .no_blind_spots .no_blind_spots_text{
         display: grid;
         gap: 16px;
-
-
     }
-
+    .aima .no_blind_spots #absolute{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
     @media screen and (min-width:666px) {
         .aima .no_blind_spots{
             align-items: center;
@@ -412,6 +455,9 @@
     
         .aima .no_blind_spots .no_blind_spots_text{
             gap: 32px;    
+        }
+        .aima .no_blind_spots #absolute{
+            width: 340px;
         }
     }
 
@@ -430,8 +476,11 @@
         .aima .no_blind_spots .no_blind_spots_text{
             gap: 40px;    
         }
+        .aima .no_blind_spots #absolute{
+            width: 400px;
+        }
     }
-
+    /* notes */
     .aima .notes{
         padding: 40px 16px;
         display: grid;
@@ -453,16 +502,6 @@
             gap: 10px;
         }
     }
-
-
-
-
-
-
-
-
-
-
 
     /* block_tree */
 
